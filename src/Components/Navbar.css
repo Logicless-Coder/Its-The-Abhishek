@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+.nav-bar {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: fixed;
+  z-index: 0;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  /* position: sticky;
+  display: flex; */
+  z-index: 1;
+}
+
+.menu {
+  float: right;
+  display: none;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .menu {
+    display: block;
+  }
+  .nav-list li a {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: "Heroes";
+  src: local("Heroes"), url(/src/Fonts/Heroes.ttf) format("truetype");
+}
+
+.logo {
+  margin: 10px 0 10px 40px;
+  color: white;
+  font-family: "Heroes";
+  font-size: 50px;
+}
+
+.nav-list {
+  vertical-align: middle;
+  list-style: none;
+  display: flex;
+  margin-right: 0px;
+  margin-left: auto;
+  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 4px 8px;
+  border: 1px solid transparent;
+}
+
+a:hover {
+  border: 1px solid aqua;
+}
+
+a:active {
+  border: 1px solid aqua;
+}

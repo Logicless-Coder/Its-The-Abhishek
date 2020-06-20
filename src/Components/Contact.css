@@ -1,0 +1,273 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+.form-div {
+  background-image: url("https://dev.infiniticreation.co.uk/wp-content/uploads/2018/06/background-kupi-contact-form.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.contact-form {
+  width: 60%;
+  margin: auto;
+  grid-row: 1;
+  grid-column: 1 4;
+}
+
+.first-row {
+  display: flex;
+  justify-content: center;
+}
+
+.second-row {
+  display: flex;
+  justify-content: center;
+}
+
+.third-row {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 80%;
+  margin: 0 10px;
+  border: none;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  font-size: 1.2rem;
+  padding: 5px;
+  padding-left: 10px;
+  font-family: "Raleway";
+}
+
+.name-field {
+  width: 30%;
+}
+
+.email-field {
+  width: 40%;
+}
+
+.submit-field {
+  width: 16%;
+  height: 100%;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  font-size: 0.8rem;
+}
+
+.message-field textarea {
+} */
+
+/* NEW FORM LAYOUT ------------------------------------------------------------------------------------------ */
+@import url(https://fonts.googleapis.com/css?family=Lato:100, 300, 400);
+
+.form-page {
+  height: 100vh;
+  width: auto;
+  padding-top: 80px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #9aecdb;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #9aecdb;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9aecdb;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder,
+textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder,
+textarea::-ms-placeholder {
+  color: #9aecdb;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder,
+textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder,
+textarea:hover::-webkit-input-placeholder {
+  color: #dcdde1;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder,
+textarea:hover:focus::-webkit-input-placeholder {
+  color: #dcdde1;
+}
+
+input:hover::-moz-placeholder,
+textarea:hover::-moz-placeholder {
+  color: #dcdde1;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder,
+textarea:hover:focus::-moz-placeholder {
+  color: #dcdde1;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: #dcdde1;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder,
+textarea:hover:focus::placeholder {
+  color: #dcdde1;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: #dcdde1;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder,
+textarea:hover::focus:-ms-placeholder {
+  color: #dcdde1;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: #23262b;
+  color: #dcdde1;
+}
+
+header {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: "Lato", sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+
+  background: transparent;
+  outline: none;
+  color: #dcdde1;
+
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #60646b;
+  color: #dcdde1;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+
+  background: transparent;
+  outline: none;
+
+  color: #dcdde1;
+  font-family: "Lato", sans-serif;
+  font-size: 0.875em;
+
+  border: solid 1px #b3aca7;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #60646b;
+  color: #dcdde1;
+}
+
+#submit {
+  width: 502px;
+
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+
+  font-family: "Lato", sans-serif;
+  font-size: 0.875em;
+  color: #dcdde1;
+
+  outline: none;
+  cursor: pointer;
+
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #dcdde1;
+}
+
+#name {
+  padding: 0px 15px 0px 15px;
+}
+
+.vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}

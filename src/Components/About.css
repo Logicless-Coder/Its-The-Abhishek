@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Sans&display=swap");
+
+.about {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url(https://images.pexels.com/photos/333850/pexels-photo-333850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+/* @font-face {
+  font-family: "Deutsch";
+  src: local("Deutsch"), url(/src/Fonts/Deutsch.ttf) format("truetype");
+} */
+
+.about-title {
+  margin: 0;
+  font-size: 5rem;
+  /* font-family: "Josefin Sans"; */
+  font-family: "Amatic SC";
+  color: #ffeaa7;
+}
+
+.about-body {
+  text-align: left;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  font-family: "Raleway";
+}
