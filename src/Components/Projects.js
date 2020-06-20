@@ -12,10 +12,22 @@ class Projects extends Component {
           title: "Password Generator",
           live_demo_link: "",
           github_repo_link: "",
-          project_image: "",
+          image: "/Images/pgs.png",
+          brief: "",
         },
         {
           title: "Weather App",
+          live_demo_link: "",
+          github_repo_link: "",
+          image: "",
+          brief: "",
+        },
+        {
+          title: "Movie App",
+          live_demo_link: "",
+          github_repo_link: "",
+          image: "",
+          brief: "",
         },
       ],
     };
@@ -32,7 +44,7 @@ class Projects extends Component {
         <div id="project-grid">
           {this.state.projects.map((project, index) => (
             <div className="project-item">
-              <ProjectItem title={project.title} />
+              <ProjectItem title={project.title} image={project.image} />
             </div>
           ))}
           {/* <div className="project-item">
