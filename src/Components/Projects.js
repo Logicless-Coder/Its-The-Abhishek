@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "./Projects.css";
 import ProjectItem from "./ProjectItem";
 
+// IMAGES
+import pgs from "../Images/pgs.PNG";
+
 class Projects extends Component {
   constructor(props) {
     super(props);
@@ -10,25 +13,27 @@ class Projects extends Component {
       projects: [
         {
           title: "Password Generator",
-          live_demo_link: "",
-          github_repo_link: "",
-          image: "/Images/pgs.png",
-          brief: "",
+          live_demo_link:
+            "https://logicless-coder.github.io/Password-Generator/",
+          github_repo_link:
+            "https://github.com/Logicless-Coder/Password-Generator",
+          image: pgs,
+          brief: "A strong random password generator.",
         },
-        {
-          title: "Weather App",
-          live_demo_link: "",
-          github_repo_link: "",
-          image: "",
-          brief: "",
-        },
-        {
-          title: "Movie App",
-          live_demo_link: "",
-          github_repo_link: "",
-          image: "",
-          brief: "",
-        },
+        // {
+        //   title: "Weather App",
+        //   live_demo_link: "",
+        //   github_repo_link: "",
+        //   image: "",
+        //   brief: "",
+        // },
+        // {
+        //   title: "Movie App",
+        //   live_demo_link: "",
+        //   github_repo_link: "",
+        //   image: "",
+        //   brief: "",
+        // },
       ],
     };
   }
@@ -44,7 +49,13 @@ class Projects extends Component {
         <div id="project-grid">
           {this.state.projects.map((project, index) => (
             <div className="project-item">
-              <ProjectItem title={project.title} image={project.image} />
+              <ProjectItem
+                title={project.title}
+                image={project.image}
+                brief={project.brief}
+                live_demo_link={project.live_demo_link}
+                github_repo_link={project.github_repo_link}
+              />
             </div>
           ))}
           {/* <div className="project-item">
